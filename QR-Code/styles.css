@@ -1,0 +1,115 @@
+
+:root {
+    /* ------ */
+    /* Colors */
+    /* ------ */
+
+    --white: rgb(255, 255, 255);
+    --lightGray: rgb(214, 226, 240);
+    --grayishBlue: rgb(123, 135, 157);
+    --darkBlue: rgb(31, 50, 81);
+
+    /* ----------- */
+    /* Font Weight */
+    /* ----------- */
+
+    --fw-exLight: 200;
+    --fw-light: 300;
+    --fw-reg: 400;
+    --fw-semiBold: 600;
+}
+/* --------------------------------------------------------- */
+
+                /* ------ */
+                /* Resets */
+                /* ------ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+h1,h2,
+h3,h4 {
+    margin: 0;
+}
+
+ul,
+li,
+a,
+p {
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+/* /////////////////////////////////////////////////////// */
+ 
+/* Styling */
+
+body {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    background-color: var(--lightGray);
+}
+
+img {
+    width: 100%;
+}
+
+
+.card-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.card-bg {
+    width: 80%;
+    max-width: 375px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3em;
+    margin-top: 5em;
+    border-radius: 1em;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, .3);
+
+}
+
+.container {
+    width: 90%;
+    margin: 1em auto 0 auto;
+}
+
+.scanner-image {
+    display: block;
+    border-radius: .5em;
+}
+
+.content-section {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 1.2em;
+    text-align: center;
+}
+
+
+.card-title {
+    font-size: 1.3125rem;
+    line-height: 1.4;
+    margin-bottom: .75em;
+}
+
+
+.card-description {
+    color: var(--grayishBlue);
+
+}
