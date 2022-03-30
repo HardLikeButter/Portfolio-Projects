@@ -1,0 +1,160 @@
+:root {
+    /*** Font Size ***/
+
+    --fw-thin: 100;
+    --fw-ex-light: 200;
+    --fw-light: 300;
+    --fw-reg: 400;
+    --fw-med: 500;
+    --fw-semi-bold: 600;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3125rem;
+    background-color:#f1f5f8; 
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+ul,
+li,
+a {
+    margin: 0;
+    list-style: none;
+    
+    
+    
+}
+
+
+.nav-center {
+    
+    background-image: linear-gradient(90deg,rgb(248, 247, 247) 20% ,rgb(255, 233, 250) 60%, rgb(252, 213, 242));
+    padding: 1em 0;
+    box-shadow: inset 0 0 20px 0 rgba(88, 88, 88, 0.5), 
+                      0 0 7px 0px rgba(76, 102, 112, 0.5);
+}
+
+
+.nav-container {
+    width: 85%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.nav-row {
+    display: flex;
+    justify-content: space-between; 
+   
+}
+
+
+.nav-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(63, 72, 72, 0.5);
+    font-weight: var(--fw-med);
+    transition: .80s;
+}
+
+.nav-links a:hover {
+    color: rgb(144, 0, 228);
+}
+
+
+.nav-links__row {
+    display: flex;
+
+    gap: 1.2em;
+}
+
+.nav-links .simple-btn {
+    color:rgb(51, 51, 51);
+}
+
+.nav-links .hex-btn {
+    color: rgb(51, 51, 51)
+}
+
+
+
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-text {
+    padding: .75rem;
+    border-radius: 1.5em;
+    margin-bottom: 1em;
+
+    font-size: 1.9rem;
+    text-align: center;
+
+    background-color: rgba(44, 40, 40, .7);
+    color: #FFF;
+    box-shadow: 10px 10px 25px 0 rgba(0, 0, 0, .6);
+}
+
+.color {
+    color: rgba(0, 255, 255);
+}
+
+
+.btn {
+    font-size: 1rem;
+    font-weight: var(--fw-reg);
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+
+    margin: 0 auto;
+    padding: .75rem;
+    border: 3px solid rgba(44, 40, 40, .7);
+    border-radius: 1em;
+
+
+    background-color: rgba(44, 40, 40, .1);
+    color: rgb(44, 40, 40);
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, .4);
+    cursor: pointer;
+    transition: .80s;
+
+}
+
+.btn:hover,
+.btn:focus {
+    color: rgb(248, 247, 247);
+    background-color: rgb(44, 40, 40, .6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
