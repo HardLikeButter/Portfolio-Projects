@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minecraft Survey</title>
+        <!-- Styles -->
+        <link rel="stylesheet" href="styles.css">
+         <!--<link href="http://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet"> -->
+    </head>
+   
+        
+ 
+
+    <body>
+        <!-- Header -->
+        <main class="main">
+            <header>
+                <h1 id="title">Minecraft Survey</h1>
+                <p id="description">First...tell us a little about you.
+                </p>
+            </header>
+            <div id="main-content" class="main-content">
+                <div id="form-content">
+                    <form id="survey-form">
+                        <section>
+                            <!-- Name -->
+                            <label for="name" id="name-label">Name</label>
+                            <input id="name" class="name" type="text" required placeholder="Enter your name" />
+                            <!-- Email -->
+                            <label for="email" id="email-label">Email</label>
+                            <input id="email" class="email" type="email" required placeholder="Enter your email" />
+                            <!-- Age -->
+                            <label for ="number" id="number-label">Age <i>(optional)</i></label>
+                            <input id="number" class="number" type="number" min="1" max="10" required placeholder="Enter your age" />
+                        </section>
+                        
+                        <!-- Knowledge -->
+                        <section>
+                            <label for="dropdown">How would you rate your Minecraft Knowledge?</label>
+                            <select id="dropdown" class="dropdown">
+                            <option value="10">10!</option>
+                            <option value="ok">Ok</option>
+                            <option value="Nope">Nope</option>
+                            <option value="Don't play Vgames">Don't play VGames</option>
+                            </select>
+                        </section>
+                        
+                        <!-- Recommend -->
+                        <section>
+                            <fieldset>
+                            <legend>Would you recommend Minecraft to a friend?</legend>
+                            <input type="radio" name="recommend " checked id="totally" value="totally"/><label                 for="totally">Totally!</label><br />
+                            
+                            <input type="radio" name="recommend " id="maybe" value="totally"/><label                           for="maybe">Maybe</label><br />
+                            
+                            <input type="radio" name="recommend " id="no" value="No"/><label                   for="yeah-right">No</label><br />
+                            </fieldset>
+                        </section>
+                        
+
+                        <!-- Mobs -->
+                        <section>
+                            <p>So What Mobs do we hate the most?</p>
+                            <input type="checkbox" id="creeper" class="creeper" name="creeper" value="creeper">
+                            <label for="creeper">Creeper</label><br>
+                            
+                            <input type="checkbox" id="zombie" class="zombie" name="zombie" value="zombie">
+                            <label for="zombie">Zombie</label><br>
+                            
+                            <input type="checkbox" id="piglings" class="piglings" name="piglings" value="piglings">
+                            <label for="piglings">Piglings</label><br>
+                            
+                            <input type="checkbox" id="villagers" class="villagers" name="villagers" value="villagers">
+                            <label for="villagers">Villagers</label><br>
+                            
+                            <input type="checkbox" id="ghast" class="ghast" name="ghast" value="ghast">
+                            <label for="ghast">Ghast</label><br>
+                            <input type="checkbox" id="turtles" class="turtles" name="turtle" value="turtle">
+                            <label for="turtle">Turtles</label><br>
+                        </section>
+
+                        <section>
+                            <!-- Comment Box -->
+                            <label for="comment">What's on your mind?</label>
+                            <textarea rows="4" cols="50" id="comment" class="comment">Please enter here...</textarea>
+                            
+                            <!-- Submit Button -->
+                            <button type="submit" id="submit" class="submit">Submit</button>
+                        </section>
+                    </form> 
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
