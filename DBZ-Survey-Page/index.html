@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link href="http://fonts.cdnfonts.com/css/saiyan-sans" rel="stylesheet"> -->
+    <title>DBZ Survey</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer ></script>
+  </head>
+
+  <!-- DBZ Logo -->
+  <main class="main">
+     <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3eb70ccc-e7ad-4e1a-87fa-f97df9ef1c52/d8rx6aw-7aed38dd-576b-47cc-b0b0-a24803f1f2fe.png/v1/fill/w_1024,h_576,strp/dragon_ball_z__dbz__nuevo_logo_by_saodvd_d8rx6aw-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvM2ViNzBjY2MtZTdhZC00ZTFhLTg3ZmEtZjk3ZGY5ZWYxYzUyXC9kOHJ4NmF3LTdhZWQzOGRkLTU3NmItNDdjYy1iMGIwLWEyNDgwM2YxZjJmZS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.oYKaNgd3mlbQkcOGM5ZCJnb4RG0bBOxr3j5rSPCpSPg" alt="Dragonball Z logo">
+    
+     
+     <body>
+         <form id="survey-form">
+             <div class="container">
+                 <!-- Header/Intro Box -->
+                 <header class="header-bg">
+                   <h1 id="title" class="title">Survey</h1>
+                   <p id="description" class="description">Please enter your info. Don't be as useless as Krillin...</p>
+                 </header>
+
+                 <!-- Name, Email, Age -->
+                 <div class="first-list-bg list-grow">
+                     <div class="info-container">
+                         <!-- Name -->
+                        <label id="name-label" class="name-label" for="name">Name</label>
+                        <input id="name" class="name"  type="text" name="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="info-container">
+                        <!-- Email -->
+                        <label id="email-label" class="email-label" for="email">Email</label>
+                        <input id="email" class="email" type="email" name="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="info-container">
+                        <!-- Age -->
+                        <label id="number-label" class="number-label" for="number">Age<span class="optional">(optional)</span></label>
+                        <input id="number" class="number" min="1" max="99" type="number" name="age" placeholder="Age">
+                    </div>
+                </div>
+
+                <!-- First Who going with Section -->
+                <div class="second-list-bg list-grow">
+                    <h2 class="second-list-title">First, who you going with?</h2>
+                    <div class="real-hero">
+                        <label>
+                            <!-- Goku -->
+                            <input class="radio" value="goku" type="radio" name="user-choice" checked><span class="radio-label">Goku</span>
+                        </label>
+
+                        <label>
+                            <!-- Superman -->
+                            <input class="radio" value="superman" type="radio" name="user-choice" disabled="true"><span class="radio-label">Superman</span>
+                        </label>
+
+                        <label>
+                            <!-- Kakarot -->
+                            <input class="radio" value="kakarot" type="radio" name="user-choice"><span class="radio-label">Kakarot</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Where are you from Section -->
+                <div class="third-list-bg list-grow">
+                    <h2 class="third-list-title">Where are you from?</h2>
+                    <select name="role" id="dropdown" class="dropdown" required>
+                    <option value="arlia">Arlia</option>
+                    <option value="big-gete-star">Big Gete Star</option>
+                    <option value="dark-star">Dark Star</option>
+                    <option value="demon-realm">Demon Realm</option>
+                    <option value="earth">Earth</option>
+                    <option value="frieza-79">Frieza 79</option>
+                    <option value="makyo-star">Makyo Star</option>
+                    <option value="namek">Namek</option>
+                    <option value="planet-vegeta">Planet Vegeta</option>
+                    </select>
+                </div>
+
+                <!-- Favorite Saga Section -->
+                <div class="fourth-list-bg list-grow">
+                    <h2 class="fourth-list-title">Which are some of your favorite Sagas?</h2>
+                    <div class="second-real-hero">
+
+                            <!-- Saiyan -->
+                        <label>
+                            <input class="checkbox" value="saiyan" type="checkbox" name="saga"><span class="checkbox-label">Saiyan</span>
+                        </label>
+
+                            <!-- Frieza -->
+                        <label>
+                            <input class="checkbox" value="frieza" type="checkbox" name="frieza"><span class="checkbox-label">Frieza</span>
+                        </label>
+
+                            <!-- Android -->
+                        <label>
+                            <input class="checkbox" value="androids" type="checkbox" name="androids"><span class="checkbox-label">Androids</span>
+                        </label>
+
+                            <!-- Cell -->
+                        <label>
+                            <input class="checkbox" value="cell" type="checkbox" name="cell"><span class="checkbox-label">Cell</span>
+                        </label>
+
+                            <!-- Majin Butt -->
+                        <label>
+                            <input class="checkbox" value="majin buu" type="checkbox" name="majin buu"><span class="checkbox-label">Majin Buu</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Comment Box -->
+                <div class="comment-box">
+                    <h2 class="comment-title">What's on your mind?</h2>
+                    <textarea name="comment" id="textarea" class="textarea" cols="30" rows="10" placeholder="Enter here..."></textarea>
+                    <!-- Submit Button -->
+                    <div class="submit-container">
+                        <a type="submit" class="submit" id="submit">Submit</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>    
+  </main>
+</html>
